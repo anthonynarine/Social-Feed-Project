@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
 import CreatePost from './Components/CreatePost/CreatePost';
+import PostList from "./Components/CreatePost/CreatePost"
 
 
 function App(){
-    const [post, setPost] = useState([]);
-
+    const [posts, setPosts] = useState([]);
 
     const handleCreatePost = (name, post) => {
-        console.log("add name and post", name,post);
+        const updatedPosts = [...post, {name, post} ];
+        setPosts(updatedPosts);
     };
 
 
     return <div>
+        <PostList posts={posts}/>
         <CreatePost onCreate={handleCreatePost}/>
     </div>
 }
