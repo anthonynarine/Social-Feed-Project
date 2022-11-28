@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CreatePost from './Components/CreatePost';
 import PostList from "./Components/PostList";
+import "./App.css";
 
 
 function App(){
@@ -12,10 +13,16 @@ function App(){
     };
 
 
-    return <div>
-        <CreatePost onCreate={handleCreatePost}/>
-        <PostList posts={posts}/>
-    </div>
+    return (    
+    <div className='container-fluid'>
+        <div><h2>Social Feed</h2></div>
+        <div className='row'>
+            <div className='col-md'>
+                <div className='border-box'><CreatePost onCreate={handleCreatePost}/></div>
+                <div className='border-box'><PostList posts={posts}/></div>              
+            </div>
+        </div>
+    </div>)
 }
 
 export default App;
