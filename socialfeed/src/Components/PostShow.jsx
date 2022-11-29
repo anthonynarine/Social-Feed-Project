@@ -1,19 +1,29 @@
+import React, { useState } from 'react';
+import "../Components/"
+
+
+
 function PostShow ({ post}) {
 
-    return (
-        <table className="table">
-            <tbody>
-                <tr>
-                    <td scope="row">{post.name}</td>
-                </tr>
-                <tr>
-                    <td scope="row">{post.post}</td>
-                </tr>
+    const [showLiked, setLiked] = useState("inactive")
 
-            </tbody>
-        </table>
+    const handleLikeClick = () => {
+
+    }
+
+    return (
+    <div className='show-post'>
+        <div className='user-name'>
+        {post.name}       
+        </div>
+        <div className='user-post'>
+        {post.post}
+        </div>
+        <div><button className='like-button' value={showLiked} onClick={handleLikeClick}>Like</button></div>
+    </div>
 
     )
+    
 };
 
 export default PostShow;

@@ -1,0 +1,28 @@
+.border-box {
+    border: 1px; 
+    border-style: solid;
+    border-color: black;
+    padding: 1em;
+    align-items: center;
+
+}
+
+.row {
+    text-align: center;
+    padding: 10px;
+    border: 10px;
+}
+
+/* .post-show {
+    border: 1em;
+} */
+
+.like-Button {
+    color: white;
+    padding: 15px 30px;
+    display: inline-block;   
+}
+
+.active {
+
+}

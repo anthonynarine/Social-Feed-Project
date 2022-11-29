@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import "./App.css";
+import "../"
 
 function CreatePost({ onCreate }) {
   const [name, setName] = useState("");
@@ -19,7 +19,7 @@ function CreatePost({ onCreate }) {
 
   return (
     <div>
-      <form className="post-form" onSubmit={handleSubmit}>
+      <form className="form-group" onSubmit={handleSubmit}>
         <label>Name</label>
         <input value={name} onChange={(event)=>setName(event.target.value)}/><br></br>
         <label>Post</label>

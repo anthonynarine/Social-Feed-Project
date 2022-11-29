@@ -7,7 +7,9 @@ function PostList({posts}) {
     })
 
 
-    return <div>{renderPosts}</div>
+    return (
+    <div>{renderPosts}</div>
+    )
 
 };
 
