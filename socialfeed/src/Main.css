@@ -24,5 +24,9 @@
 }
 
 .active {
+    background-color: royalblue;
+}
 
+.inactive{
+    background-color: darkslategray;
 }

@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import "../Components/"
 
-
-
+// Add like button functionality below
 function PostShow ({ post}) {
 
     const [showLiked, setLiked] = useState("inactive")
 
     const handleLikeClick = () => {
-
+        if(showLiked ==="inactive"){
+            setLiked("active")
+        }
+        else {
+            setLiked("inactive")
+        }
     }
 
     return (
